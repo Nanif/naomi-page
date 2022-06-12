@@ -1,36 +1,32 @@
 <template>
-  <div id="app">
+  <div id="app"
+       style="background: linear-gradient(90deg, rgba(28,39,69,1) 0%, rgba(191,87,85,1) 44%, rgba(255,255,255,1) 100%);
+;height: 100vh;">
     <component :is="layout">
-        <transition name="fade" mode="out-in">
-            <router-view></router-view>
-        </transition>
+      <!--        <transition name="fade" mode="out-in">-->
+      <!--        </transition>-->
+      <router-view></router-view>
     </component>
   </div>
 </template>
 
 <script>
-  import {mapActions} from "vuex";
 
-  const default_layout = "default";
+const default_layout = "default";
 
-  export default {
-    async mounted() {
-      let token = new URLSearchParams(window.location.search).get('token')
-      if(token){
-        await this.validateToken(token)
-      }
-    },
-    computed: {
-      layout() {
-        return (this.$route.meta && this.$route.meta.layout || default_layout) + '-layout';
-      }
-    },
-    methods:{
-      ...mapActions('account', ['validateToken','login']),
+export default {
+  async mounted() {
+
+  },
+  computed: {
+    layout() {
+      return (this.$route.meta && this.$route.meta.layout || default_layout) + '-layout';
     }
-  }
+  },
+
+}
 </script>
 
 <style lang="scss">
-  @import "assets/base.scss";
+@import "assets/base.scss";
 </style>

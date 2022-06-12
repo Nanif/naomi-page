@@ -1,4 +1,3 @@
-import {ProductsService} from "../Services/ProductsService";
 
 const state = {
     products: []
@@ -6,14 +5,10 @@ const state = {
 
 const actions = {
     async getProducts({commit}) {
-        let currentCatalogId = JSON.parse(localStorage.getItem('user')).currentCatalog;
-        let products = await ProductsService.getProducts(currentCatalogId)
         commit('getProducts', products);
     },
 
     async reloadProducts({commit}) {
-        let currentCatalogId = JSON.parse(localStorage.getItem('user')).currentCatalog;
-        let products = await ProductsService.reloadProducts(currentCatalogId)
         commit('getProducts', products);
     },
 };
