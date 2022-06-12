@@ -4,7 +4,7 @@
             <Header />
         </transition>
         <transition name="fade" mode="out-in" appear>
-            <Sidebar />
+<!--            <Sidebar />-->
         </transition>
         <div class="app-main__outer">
             <div class="app-main__inner">
@@ -29,7 +29,7 @@
 
 <script>
     import Header from "../Components/Header";
-    import Sidebar from "../Components/Sidebar";
+    // import Sidebar from "../Components/Sidebar";
     import Footer from "../Components/Footer";
     // import VuePerfectScrollbar from 'vue-perfect-scrollbar'
 
@@ -46,7 +46,7 @@
         name: 'app',
         components: {
             Header,
-            Sidebar,
+            // Sidebar,
             Footer,
             // VuePerfectScrollbar,
             // 'font-awesome-icon': FontAwesomeIcon,
