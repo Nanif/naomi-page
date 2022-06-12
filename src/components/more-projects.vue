@@ -79,4 +79,7 @@ img {
   height: 350px;
   width: auto;
   object-fit: contain;}
+.card-title, .card-text {
+  text-align: start;
+}
 </style>

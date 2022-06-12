@@ -54,6 +54,10 @@ export default {
   }
 
   .hi-text {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+
     .title {
       font-weight: bold;
       font-size: 22px;

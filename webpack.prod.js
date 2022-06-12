@@ -1,22 +1,16 @@
 const path = require('path');
-// const TerserPlugin = require('terser-webpack-plugin');‏
-const TerserPlugin = require('terser-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-//todo uglify
+
 const entries = {
-    // index: "./src/main.js",
-    catalog:"./src/smart_catalog.js"
+    index: "./src/main.js",
 };
 
 module.exports = {
-    mode: 'production',
-    optimization: {
-        minimizer: [new TerserPlugin()]
-    },
+    mode: "development",
     entry: entries,
     output: {
-        path: path.resolve(__dirname, "./dist/public"),
-        filename: "catalog.js"
+        path: path.resolve(__dirname, "./dist"),
+        filename: "siteScript.js"
     },
     plugins: [
         new VueLoaderPlugin()
@@ -24,11 +18,19 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.scss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
                 test: /\.vue$/,
                 loader: 'vue-loader',
-                options: {
-                    loaders: {scss: 'vue-style-loader!css-loader!sass-loader',}
-                }
+                // options: {
+                //     loaders: { scss: 'vue-style-loader!css-loader!sass-loader', }
+                // }
             },
             {
                 test: /\.js$/,
@@ -38,14 +40,7 @@ module.exports = {
                 test: /\.css$/,
                 use: ['vue-style-loader', 'css-loader']
             },
-            {
-                test: /\.scss$/,
-                use: [
-                    {loader: "vue-style-loader"},
-                    {loader: "css-loader", options: {sourceMap: true}},
-                    {loader: "sass-loader", options: {sourceMap: true}}
-                ]
-            },
+
             {
                 test: /\.(png|jpg|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000'
