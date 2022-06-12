@@ -1,60 +1,52 @@
 {
-  "name": "naomi-messing",
+  "name": "Smarket-Platform-Management",
   "version": "0.1.0",
-  "private": false,
-  "main": "app.js",
+  "private": true,
   "scripts": {
-    "vue-cli-service": "vue-cli-service",
-    "serve": "vue-cli-service serve --mode development",
-    "serve:prod": "vue-cli-service serve --mode production",
-    "build": "vue-cli-service build --mode production && webpack --config webpack.prod.js",
-    "lint": "vue-cli-service lint",
-    "dev": "webpack --config webpack.config.js",
-    "prod": "webpack --mode production --config webpack.prod.js",
-    "postinstall": "vue-cli-service build"
+    "start": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.28",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
-    "@fortawesome/vue-fontawesome": "^0.1.9",
-    "@google-cloud/local-auth": "^1.0.0",
-    "@hapi/joi": "^17.1.1",
-    "@vue/cli-plugin-babel": "~4.2.0",
-    "@vue/cli-plugin-eslint": "~4.2.0",
-    "@vue/cli-service": "~4.2.0",
-    "@webpack-cli/serve": "^0.2.0",
-    "axios": "^0.19.2",
-    "babel-eslint": "^10.0.3",
-    "bootstrap": "^4.4.1",
-    "bootstrap-vue": "^2.11.0",
-    "cloudinary": "",
-    "core-js": "^3.6.4",
-    "css-loader": "^3.0.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.1.2",
-    "file-loader": "^4.0.0",
-    "js-base64": "^2.6.2",
-    "jsonwebtoken": "^8.5.1",
-    "jwt-decode": "^2.2.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/vue-fontawesome": "^0.1.6",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^4.5.11",
+    "animate-sass": "^0.8.2",
+    "axios": "^0.24.0",
+    "babel-eslint": "^10.0.1",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.22.2",
+    "chart.js": "^2.8.0",
+    "core-js": "^3.22.8",
+    "crypto": "^1.0.1",
+    "es6-promise": "^4.2.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "express": "^4.18.1",
+    "increase-memory-limit": "^1.0.6",
+    "jwt-decode": "^3.1.2",
     "node-sass": "^4.14.1",
-    "sass-loader": "^8.0.2",
-    "stream": "0.0.2",
-    "terser-webpack-plugin": "^1.4.1",
-    "vue": "^2.6.11",
-    "vue-cli-plugin-mdb": "~2.1.0",
-    "vue-drag-drop": "^1.1.4",
-    "vue-google-login": "^2.0.5",
-    "vue-head": "^2.2.0",
-    "vue-loader": "^15.9.1",
-    "vue-router": "^3.1.6",
-    "vue-template-compiler": "^2.6.11",
-    "vue2-dropzone": "^3.6.0",
-    "vuedraggable": "^2.23.2",
-    "vuelidate": "^0.7.5",
-    "vuex": "^3.2.0",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.11",
-    "winston": "^3.3.3"
+    "pe7-icon": "^1.0.4",
+    "perfect-scrollbar": "^1.4.0",
+    "popper.js": "^1.15.0",
+    "sass-loader": "^7.1.0",
+    "serve-static": "^1.15.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vee-validate": "^3.4.14",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-perfect-scrollbar": "^0.1.0",
+    "vue-router": "^3.0.5",
+    "vue-sidebar-menu": "^3.7.0",
+    "vue-template-compiler": "^2.6.10",
+    "vue2-google-maps": "^0.10.6",
+    "vuex": "^3.1.0",
+    "webpack": "^4.46.0"
   },
   "eslintConfig": {
     "root": true,
@@ -65,18 +57,19 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
+    "rules": {},
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {}
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   },
   "browserslist": [
     "> 1%",
-    "last 2 versions"
-  ],
-  "devDependencies": {
-    "node-env-run": "^3.0.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^4.9.2"
-  }
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
