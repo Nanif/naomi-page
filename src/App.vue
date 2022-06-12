@@ -1,7 +1,5 @@
 <template>
-  <div id="app"
-       style="background: linear-gradient(90deg, rgba(28,39,69,1) 0%, rgba(191,87,85,1) 44%, rgba(255,255,255,1) 100%);
-;height: 100vh;">
+  <div id="app" class="app">
     <component :is="layout">
       <!--        <transition name="fade" mode="out-in">-->
       <!--        </transition>-->
@@ -28,5 +26,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/base.scss";
+.app {
+  background: linear-gradient(90deg, rgba(28,39,69,1) 0%, rgba(191,87,85,1) 44%, rgba(255,255,255,1) 100%);
+;height: 100vh;
+}
 </style>
