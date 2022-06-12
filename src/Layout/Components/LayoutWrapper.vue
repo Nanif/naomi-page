@@ -5,7 +5,5 @@
 </template>
 
 <script>
-mounted() {
-  console.log('layout-wrapper')
-}
+
 </script>

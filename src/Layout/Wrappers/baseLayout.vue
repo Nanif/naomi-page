@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <Header/>
+    <naomi-header/>
     <div class="content">
       <slot></slot>
     </div>
@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from "../Components/Header";
+import naomiHeader from "../Components/naomiHeader";
 
 import {library} from '@fortawesome/fontawesome-svg-core'
 import {
@@ -23,7 +23,7 @@ library.add(
 export default {
   name: 'app',
   components: {
-    Header,
+    naomiHeader,
   },
   methods: {},
 }

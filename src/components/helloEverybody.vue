@@ -27,10 +27,10 @@
 
 <script>
 export default {
-  name: "hello",
+  name: "helloEverybody",
   mounted() {
     // eslint-disable-next-line no-console
-    console.log('hello');
+    console.log('helloeverybody');
   }
 }
 </script>

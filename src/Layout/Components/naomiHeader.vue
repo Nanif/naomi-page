@@ -8,7 +8,6 @@
           <b-nav-item exact exact-active-class="active" to="/more-projects">ועוד פרויקטים</b-nav-item>
           <b-nav-item exact exact-active-class="active" to="/my-resume">קורות החיים שלי</b-nav-item>
         </b-nav>
-
       </div>
     </div>
 
@@ -17,17 +16,8 @@
 
 <script>
 
-
-import {library} from '@fortawesome/fontawesome-svg-core'
-import {
-  faEllipsisV,
-} from '@fortawesome/free-solid-svg-icons'
-
-library.add(
-    faEllipsisV,
-);
 export default {
-  name: "Header",
+  name: "naomiHeader",
   components: {},
 
   data() {

@@ -12,7 +12,7 @@ export const router = new Router({
         {
             path: '/hello',
             name: 'hello',
-            component: () => import('../components/hello')
+            component: () => import('../components/helloEverybody')
         },
         {
             path: '/irox-exercise',
