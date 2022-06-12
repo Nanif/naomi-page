@@ -4,8 +4,8 @@
       <div class="nav-bar">
         <b-nav pills>
           <b-nav-item exact exact-active-class="active" to="/hello">נעים להכיר</b-nav-item>
-          <b-nav-item exact exact-active-class="active" to="/irox-exercise">התרגיל באירוקס</b-nav-item>
-          <b-nav-item exact exact-active-class="active" to="/more-projects">ועוד פרויקטים</b-nav-item>
+          <b-nav-item exact exact-active-class="active" to="/irox-exercise">התרגיל של אירוקס</b-nav-item>
+          <b-nav-item exact exact-active-class="active" to="/more-projects">עוד קצת עלי</b-nav-item>
           <b-nav-item exact exact-active-class="active" to="/my-resume">קורות החיים שלי</b-nav-item>
         </b-nav>
       </div>
