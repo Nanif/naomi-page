@@ -29,6 +29,6 @@ export default {
 .app {
   direction: rtl;
   background: linear-gradient(90deg, rgba(28, 39, 69, 1) 0%, rgba(191, 87, 85, 1) 44%, rgba(255, 255, 255, 1) 100%);;
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

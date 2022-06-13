@@ -30,7 +30,6 @@ export default {
   name: "helloEverybody",
   mounted() {
     // eslint-disable-next-line no-console
-    console.log('helloeverybody');
   }
 }
 </script>

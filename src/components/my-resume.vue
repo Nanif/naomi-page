@@ -56,7 +56,6 @@ export default {
   },
   methods: {
     downloadResume() {
-      window.console.log(this.downloadUrl)
       window.open(this.downloadUrl, "_blank");
     },
   }

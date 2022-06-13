@@ -17,7 +17,7 @@ export const router = new Router({
         {
             path: '/irox-exercise',
             name: 'irox-exercise',
-            component: () => import('../components/irox-exercise')
+            component: () => import('../components/irox-exercise/irox-exercise')
         },
         {
             path: '/more-projects',

@@ -1,0 +1,27 @@
+{
+  "Events": {
+    "Event": [
+      {
+        "-ID": "12346",
+        "EventTarget": "Lea Levi",
+        "EventType": "Phone",
+        "EventName": "03-6195427",
+        "EventFrom": "12/01/2002 7:45:23",
+        "EventTo": "12/01/2002 8:10:02",
+        "EventChecked": "false",
+        "RecordFile": "Phome123456.wav"
+      },
+      {
+        "-ID": "12347",
+        "EventTarget": "Lea Levi",
+        "EventType": "E-Mail",
+        "EventName": "Lea@walla.co.il",
+        "EventFrom": "12/01/2002 7:45:23",
+        "EventTo": "12/01/2002 8:10:02",
+        "EventChecked": "True",
+        "AttachmentCount": "3",
+        "CC": "Eyal@matarot.co.il,Rivka@netvision.net"
+      }
+    ]
+  }
+}

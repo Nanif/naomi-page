@@ -1,0 +1,25 @@
+{
+  "Events": {
+    "Event": [
+      {
+        "-ID": "12345",
+        "EventTarget": "Moshe Cohen",
+        "EventType": "SMS",
+        "EventName": "052-687542",
+        "EventFrom": "12/01/2002 15:45:23",
+        "EventTo": "12/01/2002 15:48:02",
+        "EventChecked": "False"
+      },
+      {
+        "-ID": "12346",
+        "EventTarget": "Lea Levi",
+        "EventType": "Phone",
+        "EventName": "03-6195427",
+        "EventFrom": "12/01/2002 7:45:23",
+        "EventTo": "12/01/2002 8:10:02",
+        "EventChecked": "True",
+        "RecordFile": "Phome123456.wav"
+      }
+    ]
+  }
+}
